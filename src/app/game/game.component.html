@@ -1,0 +1,14 @@
+<div *ngIf="gameInfo" class="card">
+  <img src="{{gameInfo.background_image}}" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{gameInfo.name}}</h5>
+    <div class="card-header">
+      <h3>Genres : </h3>
+      <strong>{{gameInfo.genre}}</strong>
+    </div>
+    <strong>Description</strong>
+    <p class="card-text">
+      {{gameInfo.description_raw}}
+    </p>
+  </div>
+</div>
